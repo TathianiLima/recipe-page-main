@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Krona+One&family=Numans&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Krona+One&family=Numans&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --cor-primaria:#e4ded8;
+    --cor-secundaria:#ffffff;
+    --cor-texto:#7b284f;
+    --cor-fundo: #fff5fa;
+    --cor-descricao: #302d2c;
+    --cor-texto-descricao:#f3e6d8;
+    --cor-descricao-t: #5f574e;
+    --cor-titulo: #854632;
+
+
+
+}
+
+
+body {
+    background-color: var(--cor-primaria);
+    display: flex;
+   
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color:var(--cor-secundaria) ;
+    max-width: 50%;
+    margin: 5px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+
+}
+
+.omelete_img {
+    width: 90%;
+    border-radius: 10px;
+    align-items: center;
+    margin: 50px 20px 20px 40px;
+       
+ 
+}
+.card_destacado {
+  background-color: var(--cor-fundo);
+  border-radius: 20px;
+  width: 90%; 
+  height: 150px; 
+  margin: 20px auto; 
+  overflow: auto; 
+  padding: 35px
+ 
+  
+  
+
+}
+.titulo_inicial, .descricao {
+    margin: 20px;
+    
+   
+} 
+
+.titulo_inicial {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.descricao,.descricao_final {
+    color:var(--cor-descricao-t);
+    font-size: 18px;
+    line-height: 1.5;
+    font-family:"Outfit", sans-serif;
+    margin: 20px;
+}
+
+    
+
+.titulo {
+    color: var(--cor-texto);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family:"Outfit", sans-serif;
+    font-weight: 600;
+    
+}
+.lista,.lista_2{
+    font-size: 18px;
+    margin-top: 0;
+    font-family:"Outfit", sans-serif;
+    color: var(--cor-descricao-t);
+    margin: 6px;
+    line-height: 1.8;
+    
+    
+
+}
+   
+.card_ingredientes,.card_Instrucoes, .card_Nuticao {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    padding-left: 25px;
+    color:var(--cor-titulo);
+    font-size: 25px
+}
+
+   
+.lista_1 {
+    font-family:"Outfit", sans-serif;
+    color: var(--cor-descricao-t);
+    padding-left: 55px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    line-height: 1.9;
+    font-size:18px;
+    
+    
+}
+.lista_1,.lista_2 {
+    border-bottom: 1px solid #ddd;
+    width: 90%;
+    margin: 15px;
+}
+.tabela {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family:"Outfit", sans-serif;
+    text-align:justify;
+    margin: 30px;
+}
+.tabela td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+ 
+
+.tabela  td:first-child {
+    color: var(--cor-descricao-t);
+}
+
+
+
+.tabela td:last-child {
+    color: var(--cor-titulo);
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        max-width: 70%; 
+    }
+
+    .omelete_img {
+        margin: 40px 20px 20px 40px; 
+    }
+
+    .card_destacado {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .titulo_inicial {
+        font-size: 24px; 
+    }
+
+    .descricao, .descricao_final {
+        font-size: 16px; 
+    }
+
+    .lista, .lista_2, .lista_1 {
+        font-size: 16px; 
+    }
+
+    .tabela {
+        width: 90%; 
+        margin: 20px ; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .card {
+        max-width: 90%; 
+        margin: 10px auto; 
+    }
+
+    .omelete_img {
+        width: 100%; 
+        margin: 0 ; 
+    }
+
+    .card_destacado {
+        padding: 10px; 
+    }
+
+    .titulo_inicial {
+        font-size: 20px; 
+    }
+
+    .descricao, .descricao_final {
+        font-size: 14px; 
+    }
+
+    .lista, .lista_2, .lista_1 {
+        font-size: 12px; 
+        padding-left: 10px;
+        margin: 20px;
+    }
+
+    .tabela {
+        font-size: 14px; 
+        margin:20px;
+        width:90%;
+
+    }
+}
